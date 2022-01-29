@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>
+        Swift Product
+    </title>
+{% endblock %}
+
+{% block body %}
+    <div class="content">
+        <h1>Product</h1>
+
+        <form action="/" method="POST">
+            <label>Product Id:</label>
+            <br>
+            <input type="text" name="product_id" id="product_id">
+            <br>
+            <label>Product Name:</label>
+            <br>
+            <input type="text" name="product_name" id="product_name">
+            <br>
+            <label>Sales Price</label>
+            <br>
+            <input type="text" name="sale_price" id="sale_price">
+            <br>
+            <input type="submit" value="Add product"> 
+
+        </form>
+
+        <br>
+
+        <table>
+            <tr>
+                <th>ProductId</th>
+                <th>ProductName</th>
+                <th>Sale Price</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="">Delete</a>
+                </td>
+                <td>
+                    <a href="">Edit</a>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+    </div>
+{% endblock %}
